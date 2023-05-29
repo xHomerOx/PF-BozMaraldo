@@ -51,7 +51,6 @@ header #logo-wrapper img{
     width: 150px;
 }
 header #logo-wrapper p{
-    width: 300px;
     height: auto;
     text-shadow: 2px 6px 6px black;
 }
@@ -191,9 +190,6 @@ form{
     margin: 0 auto;
     border: 1px #b5e853 dashed;
 }
-form fieldset{
-    padding: 30px;
-}
 form p{
     padding: 10px;
 }
@@ -304,13 +300,15 @@ footer #copyright .social a{
     gap: 0px 0px; 
     grid-template-areas: 
     "grid-1 grid-1 grid-1"
-    "grid-2 grid-2 grid-3"; 
+    "grid-2 grid-2 grid-2"
+    "grid-3 grid-3 grid-3"; 
 }
 #projects img{
     width: 100%;
 }
 .grid-1{
     grid-area: grid-1;
+    padding: 20px;
 }
 .grid-2{
     grid-area: grid-2;
@@ -376,6 +374,15 @@ footer #copyright .social a{
     .networks a{
         border-left: none;
         border-right: none;
+    }
+    #projects .container{
+        display: grid; 
+        grid-template-columns: 2fr 1.5fr 1fr; 
+        grid-template-rows: 1fr 1fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+        "grid-1 grid-1 grid-1"
+        "grid-2 grid-2 grid-3"; 
     }
 }
   
