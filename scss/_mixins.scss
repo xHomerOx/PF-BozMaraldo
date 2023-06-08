@@ -1,0 +1,19 @@
+@import "_variables.scss";
+
+@mixin backgrounds {
+    background-image: -webkit-linear-gradient(top, $blackColor, $gradientColor);
+    background-image: -moz-linear-gradient(top, $blackColor, $gradientColor);
+    background-image: -ms-linear-gradient(top, $blackColor, $gradientColor);
+    background-image: -o-linear-gradient(top, $blackColor, $gradientColor);
+}
+
+@mixin headers {
+    color: $textColor1;
+    letter-spacing: -0.03em;
+    text-shadow: 2px 2px rgb(0, 0, 0), 0 0 5px rgba(0, 0, 0, 10%), 0 0 10px $textShadow;
+    text-align: center;
+}
+
+@mixin borderBottom($textColor1){
+    border-bottom: 1px $textColor1 dashed;
+}

@@ -1,0 +1,12 @@
+/* Colors */
+$textColor: 181, 232, 83;
+$textColor1: rgb(nth($textColor, 1), nth($textColor, 2), nth($textColor, 3));
+$textColor2: #fff;
+$textColor3: #99C624;
+$transparentColor: rgba(nth($textColor, 1), nth($textColor, 2), nth($textColor, 3), 0.47);
+$blackColor: #000000;
+$gradientColor: #5ED01E;
+$textShadow: rgba($textColor1, 0.1);
+
+/* Borders */
+$solidBorder: 1px #b5e853 solid;

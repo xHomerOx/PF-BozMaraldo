@@ -1,0 +1,39 @@
+@import "_variables.scss";
+
+/* Mobile First Breakpoints */
+@media screen and (min-width: 992px) {
+    .gallery {
+        div{ 
+            grid-template-columns: repeat(2, 1fr); 
+        }
+    }
+    .networks {
+        a{
+            border-left: none;
+            border-right: none;
+        }
+    }
+    #projects {
+        .container{
+            display: grid; 
+            grid-template-columns: 2fr 1.5fr 1fr; 
+            grid-template-rows: 1fr 1fr; 
+            gap: 0; 
+            grid-template-areas: 
+            "grid-1 grid-1 grid-1"
+            "grid-2 grid-2 grid-3"; 
+        }
+    }
+}
+  
+@media screen and (min-width: 1400px) {
+    .gallery {
+        div{ 
+            grid-template-columns: repeat(3, 1fr);
+        } 
+    }
+    .networks a{
+        border-left: $solidBorder;
+        border-right: $solidBorder;
+    }
+}
