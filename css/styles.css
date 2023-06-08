@@ -25,6 +25,13 @@ body {
   100% {
     transform: scale(1); } }
 
+.projects img {
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1); }
+  .projects img:hover {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0); }
+
 /* Colors */
 /* Borders */
 /* Nesting Start */

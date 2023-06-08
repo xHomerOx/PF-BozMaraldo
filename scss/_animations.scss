@@ -25,3 +25,21 @@ body{
         transform: scale(1);
     }
 }
+
+@function grayScale($percent, $amount) {
+    $toColor: $percent + ($amount / 100);
+    @return $toColor;
+  }
+  
+  $gs: 0;
+  .projects {
+    img {
+      -webkit-filter: grayscale(grayScale($gs, 100));
+      filter: grayscale(grayScale($gs, 100));
+      &:hover {
+        -webkit-filter: grayscale(grayScale($gs, 0));
+        filter: grayscale(grayScale($gs, 0));
+      }
+    }
+  }
+  
