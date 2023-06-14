@@ -2,6 +2,14 @@
 
 /* Mobile First Breakpoints */
 @media screen and (min-width: 992px) {
+    #gallery {
+        .gallery{
+            position: relative;
+            width: 80%;
+            min-height: 22vw;
+            margin: 80px auto;
+        }
+    }
     .gallery {
         div{ 
             grid-template-columns: repeat(2, 1fr); 

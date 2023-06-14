@@ -7,6 +7,15 @@
     background-image: -o-linear-gradient(top, $blackColor, $gradientColor);
 }
 
+
+@mixin sections {
+    background: rgb(0,0,0);
+    background: -moz-linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(147,147,147,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(147,147,147,1) 100%);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(147,147,147,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#939393",GradientType=1);
+}
+
 @mixin headers {
     color: $textColor1;
     letter-spacing: -0.03em;

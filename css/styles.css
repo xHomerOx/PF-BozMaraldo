@@ -38,6 +38,7 @@ body {
 /* Header */
 body {
   background: url("../images/background-custom.png");
+  background-attachment: fixed;
   color: #fff;
   font-size: 16px;
   line-height: 1.5;
@@ -53,7 +54,16 @@ body {
     position: absolute;
     top: 0;
     background-size: cover;
-    opacity: 0.3; }
+    opacity: 0.3;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-attachment: fixed;
+    background-position: center;
+    row-gap: 4rem;
+    text-align: center; }
 
 h1 {
   color: #b5e853;
@@ -115,9 +125,14 @@ section {
 header {
   width: 100%;
   padding: 20px;
+  background: black;
+  background: -moz-linear-gradient(180deg, black 0%, #939393 100%);
+  background: -webkit-linear-gradient(180deg, black 0%, #939393 100%);
+  background: linear-gradient(180deg, black 0%, #939393 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#939393",GradientType=1);
   border-bottom: 1px #b5e853 dashed;
-  position: relative;
-  z-index: 1; }
+  position: fixed;
+  z-index: 2; }
   header #logo-wrapper img {
     width: 150px; }
   header #logo-wrapper p {
@@ -186,54 +201,65 @@ main {
     margin: 20px;
     border: none; }
 
-.carousel-item img {
-  max-height: 720px;
-  min-height: 430px; }
-
-.carousel-caption {
-  top: 50%;
-  transform: translateY(-50%); }
-
-.carousel-control-prev, .carousel-control-next {
-  background: rgba(181, 232, 83, 0.47); }
-  .carousel-control-prev span, .carousel-control-next span {
-    background-size: 5rem;
-    width: 5rem;
-    height: 5rem; }
+.carousel {
+  margin-top: 195px; }
+  .carousel .carousel-item img {
+    max-height: 720px;
+    min-height: 430px; }
+  .carousel .carousel-caption {
+    top: 50%;
+    transform: translateY(-50%); }
+  .carousel .carousel-control-prev, .carousel .carousel-control-next {
+    background: rgba(181, 232, 83, 0.47); }
+    .carousel .carousel-control-prev span, .carousel .carousel-control-next span {
+      background-size: 5rem;
+      width: 5rem;
+      height: 5rem; }
 
 /* About Us */
 .about h6 {
   margin-top: 40px; }
 
 /* My Projects */
-.projects h3 {
-  margin-bottom: 40px; }
-
-.projects article {
-  width: 100%;
-  margin: 20px auto; }
+.projects {
+  background: black;
+  background: -moz-linear-gradient(180deg, black 0%, #939393 100%);
+  background: -webkit-linear-gradient(180deg, black 0%, #939393 100%);
+  background: linear-gradient(180deg, black 0%, #939393 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#939393",GradientType=1); }
+  .projects h3 {
+    margin-bottom: 40px; }
+  .projects article {
+    width: 100%;
+    margin: 20px auto; }
 
 /* Gallery */
-.gallery h3 {
+.gallery .gallery-wrapper h3 {
   margin-bottom: 20px; }
 
-.gallery h6 {
+.gallery .gallery-wrapper h6 {
   text-align: center; }
 
-.gallery div {
+.gallery .gallery-wrapper div {
   grid-gap: 1rem; }
 
-.gallery img {
+.gallery .gallery-wrapper img {
   width: 100%;
   height: 300px;
   border: 3px #b5e853 solid;
   opacity: 0.6; }
-  .gallery img:hover {
+  .gallery .gallery-wrapper img:hover {
     opacity: 1; }
 
 /* Form */
-.contact h3 {
-  margin-bottom: 20px; }
+.contact {
+  background: black;
+  background: -moz-linear-gradient(180deg, black 0%, #939393 100%);
+  background: -webkit-linear-gradient(180deg, black 0%, #939393 100%);
+  background: linear-gradient(180deg, black 0%, #939393 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#939393",GradientType=1); }
+  .contact h3 {
+    margin-bottom: 20px; }
 
 form {
   width: 80%;
@@ -283,6 +309,11 @@ form {
 
 /* Footer */
 footer {
+  background: black;
+  background: -moz-linear-gradient(180deg, black 0%, #939393 100%);
+  background: -webkit-linear-gradient(180deg, black 0%, #939393 100%);
+  background: linear-gradient(180deg, black 0%, #939393 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#939393",GradientType=1);
   position: relative;
   z-index: 1; }
   footer img {
@@ -303,7 +334,8 @@ footer {
     text-align: center; }
     footer #copyright .social a {
       text-decoration: none;
-      color: #b5e853; }
+      color: #b5e853;
+      padding: 10px; }
 
 /* About Page */
 #about .who-we-are {
@@ -323,7 +355,12 @@ footer {
   padding: 20px;
   width: 80%;
   display: flex;
-  margin: 0 auto; }
+  margin: 0 auto;
+  background: black;
+  background: -moz-linear-gradient(180deg, black 0%, #939393 100%);
+  background: -webkit-linear-gradient(180deg, black 0%, #939393 100%);
+  background: linear-gradient(180deg, black 0%, #939393 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#939393",GradientType=1); }
 
 /* Projects Page */
 #projects .container {
@@ -352,10 +389,8 @@ footer {
 
 /* Gallery Page */
 #gallery .gallery {
-  position: relative;
-  width: 80%;
-  min-height: 22vw;
-  margin: 80px auto; }
+  width: 100%;
+  height: auto; }
   #gallery .gallery #images {
     width: 50%;
     height: 230px; }
@@ -382,6 +417,11 @@ footer {
 /* Borders */
 /* Mobile First Breakpoints */
 @media screen and (min-width: 992px) {
+  #gallery .gallery {
+    position: relative;
+    width: 80%;
+    min-height: 22vw;
+    margin: 80px auto; }
   .gallery div {
     grid-template-columns: repeat(2, 1fr); }
   .networks a {
