@@ -48,8 +48,10 @@ body{
     }
 }
 
-#slider #know-us{
-    @include backgrounds;
+#slider{
+    #know-us{
+        @include backgrounds;
+    }
 }
 
 section{
@@ -109,7 +111,6 @@ $main: main;
     #{$main} {
         position: relative;
         z-index: 1;
-        margin-top: 165px;
         h3 {
             font-size: 24px;
         }
@@ -130,23 +131,20 @@ $main: main;
     position: relative;
     margin: 0 auto;
     @include borderBottom($textColor1);
-
     #slides{
         width: 300vw;
         animation: slide 20s ease infinite;
         float: left;
         max-height: 720px;
         min-height: 430px;
-
         .slide{
             float: left;
             height: 800px;
             width: 100vw;
         }
-
     }
 
-    #know-us{
+    #know-us-button{
         background: $blackColor;
         @include backgrounds;
         border-radius: 15px;
@@ -165,11 +163,11 @@ $main: main;
 }
 
 .carousel{
+        margin-top: 165px;
     .carousel-item {
         height: 430px;
         img{
-            max-height: 720px;
-            min-height: 430px;
+            position: absolute;
         }
     }
     .carousel-caption{
