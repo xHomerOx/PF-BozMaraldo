@@ -363,7 +363,7 @@ footer {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#939393",GradientType=1); }
 
 /* Projects Page */
-#projects .container {
+#projects .container-fluid {
   display: grid;
   grid-template-columns: 2fr 1.5fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -416,6 +416,13 @@ footer {
 /* Colors */
 /* Borders */
 /* Mobile First Breakpoints */
+@media screen and (min-width: 1400px) {
+  .gallery div {
+    grid-template-columns: repeat(3, 1fr); }
+  .networks a {
+    border-left: 1px #b5e853 solid;
+    border-right: 1px #b5e853 solid; } }
+
 @media screen and (min-width: 992px) {
   #gallery .gallery {
     position: relative;
@@ -427,16 +434,9 @@ footer {
   .networks a {
     border-left: none;
     border-right: none; }
-  #projects .container {
+  #projects .container-fluid {
     display: grid;
     grid-template-columns: 2fr 1.5fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 0;
     grid-template-areas: "grid-1 grid-1 grid-1" "grid-2 grid-2 grid-3"; } }
-
-@media screen and (min-width: 1400px) {
-  .gallery div {
-    grid-template-columns: repeat(3, 1fr); }
-  .networks a {
-    border-left: 1px #b5e853 solid;
-    border-right: 1px #b5e853 solid; } }

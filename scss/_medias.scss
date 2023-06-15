@@ -1,6 +1,18 @@
 @import "_variables.scss";
 
 /* Mobile First Breakpoints */
+@media screen and (min-width: 1400px) {
+    .gallery {
+        div{ 
+            grid-template-columns: repeat(3, 1fr);
+        } 
+    }
+    .networks a{
+        border-left: $solidBorder;
+        border-right: $solidBorder;
+    }
+}
+
 @media screen and (min-width: 992px) {
     #gallery {
         .gallery{
@@ -22,7 +34,7 @@
         }
     }
     #projects {
-        .container{
+        .container-fluid{
             display: grid; 
             grid-template-columns: 2fr 1.5fr 1fr; 
             grid-template-rows: 1fr 1fr; 
@@ -31,17 +43,5 @@
             "grid-1 grid-1 grid-1"
             "grid-2 grid-2 grid-3"; 
         }
-    }
-}
-  
-@media screen and (min-width: 1400px) {
-    .gallery {
-        div{ 
-            grid-template-columns: repeat(3, 1fr);
-        } 
-    }
-    .networks a{
-        border-left: $solidBorder;
-        border-right: $solidBorder;
     }
 }
