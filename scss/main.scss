@@ -66,12 +66,12 @@ $myH3: "#about", "#projects", "#gallery", "#contact";
 
 header{
     width: 100%;
-    padding: 20px;
+    padding: 5px;
     @include sections;
     @include borderBottom($textColor1);
     position: fixed;
     z-index: 2;
-
+    top: 0;
     #logo-wrapper{
         img{
             width: 150px;
@@ -91,8 +91,8 @@ header{
                 text-decoration: none;
             }
             li{
-                font-size: 1.3rem;
-                padding: 0 15px;
+                font-size: 1.2rem;
+                padding: 0 40px;
                 cursor: pointer;
                 &:hover{
                     color: $textColor1;
@@ -109,6 +109,7 @@ $main: main;
     #{$main} {
         position: relative;
         z-index: 1;
+        margin-top: 165px;
         h3 {
             font-size: 24px;
         }
@@ -161,12 +162,11 @@ $main: main;
         margin: 20px;
         border: none;
     }
-
 }
 
 .carousel{
-    margin-top: 195px;
     .carousel-item {
+        height: 430px;
         img{
             max-height: 720px;
             min-height: 430px;
@@ -239,6 +239,7 @@ form{
     width: 80%;
     margin: 0 auto;
     border: 1px $textColor1 solid;
+    padding: 50px;
     p{
         padding: 10px;
     }
@@ -276,6 +277,8 @@ form{
     margin: 0 auto;
     text-align: center;
     div{
+        background: $transparentColor;
+        border-radius: 30px;
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
@@ -313,6 +316,9 @@ footer{
         margin: 0 auto;
         text-align: center;
         .social {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             a{
                 text-decoration: none;
                 color: $textColor1;
@@ -324,14 +330,17 @@ footer{
 
 /* About Page */
 #about {
-    .who-we-are{
-        width: 80%;
-        margin: 20px auto;
-    }
     .about{
         @include borderBottom($textColor1);
     }
     section{
+        border: none;
+        .card {
+            background: #b5e853;
+            img{
+                padding: 60px;
+            }
+        }
         article {
             .text{
                 flex-direction: column;
@@ -370,10 +379,11 @@ footer{
 @for $i from 1 through 3 {
     .grid-#{$i} {
         grid-area: grid-#{$i};
-        padding: 20px;
+        padding: 80px;
         @if $i == 3 {
             display: flex;
             flex-direction: column;
+            padding: 80px;
         }
     }
 }

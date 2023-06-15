@@ -11,15 +11,31 @@
         border-left: $solidBorder;
         border-right: $solidBorder;
     }
+    #projects {
+        .container-fluid{
+            .grid-3{
+                padding: 65px 70px 20px 0;
+            }
+        }
+    }
 }
 
 @media screen and (min-width: 992px) {
     #gallery {
-        .gallery{
+        .gallery, .video{
             position: relative;
-            width: 80%;
             min-height: 22vw;
             margin: 80px auto;
+            width: 80%;
+        }
+        .video{
+            width: 100%;
+            padding: 90px;
+            background: black;
+            background: -moz-linear-gradient(180deg, black 0%, #939393 100%);
+            background: -webkit-linear-gradient(180deg, black 0%, #939393 100%);
+            background: linear-gradient(180deg, black 0%, #939393 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#939393",GradientType=1);
         }
     }
     .gallery {
