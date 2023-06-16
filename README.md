@@ -1,5 +1,9 @@
-# PreEntrega3-BozMaraldo
-PreEntrega3+BozMaraldo
+# ProyectoFinal-BozMaraldo
+PF+BozMaraldo
 
-*Compilacion via SaSS.
-*Animaciones agregadas.
+*Agregadas animaciones.
+*Correciones mobile.
+*Separación de Menú.
+*Agregado Wireframe.
+*Páginas reestructuradas.
+*Cambios varios.
