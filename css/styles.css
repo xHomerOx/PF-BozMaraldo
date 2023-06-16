@@ -207,7 +207,8 @@ main {
   .carousel .carousel-item {
     height: 430px; }
     .carousel .carousel-item img {
-      position: absolute; }
+      position: absolute;
+      height: 100%; }
   .carousel .carousel-caption {
     top: 50%;
     transform: translateY(-50%); }
@@ -437,6 +438,9 @@ footer {
     padding: 65px 70px 20px 0; } }
 
 @media screen and (min-width: 992px) {
+  .carousel .carousel-item img {
+    position: absolute;
+    height: auto; }
   #gallery .gallery, #gallery .video {
     position: relative;
     min-height: 22vw;
