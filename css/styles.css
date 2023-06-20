@@ -265,10 +265,10 @@ main {
     margin-bottom: 20px; }
 
 form {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   border: 1px #b5e853 solid;
-  padding: 50px; }
+  padding: 30px; }
   form p {
     padding: 10px; }
   form label {
